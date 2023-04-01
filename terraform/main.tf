@@ -33,7 +33,8 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
 
   attribute {
     name = "item"
-    type = "N"
+    /** json文字列*/
+    type = "S"
   }
 
   ttl {
